@@ -62,23 +62,107 @@ RPquest
   
 </body>
 <style>
- body {
-background-color:black;
+/* Style général */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-  p1 {
-    color: #ffffff;
-  }
-h5 {
-    color: #ffffff;
+
+/* Logo */
+img {
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s infinite alternate;
 }
-    h2 {
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+/* Titres */
+h2, h3, h5, h6 {
     color: #ffffff;
-  }
-   h3 {
-    color: #ffffff;
-  }
-  h6 {
-    color: #ffffff;
-  }
+    margin: 10px 0;
+    transition: color 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2:hover, h3:hover, h5:hover, h6:hover {
+    color: #ff8c00;
+}
+
+/* Paragraphes */
+p {
+    color: #ddd;
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Sections */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+/* Boutons */
+button {
+    background: linear-gradient(45deg, #ff8c00, #ff0080);
+    border: none;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.6);
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff0080, #ff8c00);
+    box-shadow: 0 0 18px rgba(255, 140, 0, 0.9);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+/* Pied de page */
+h6 {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+    font-style: italic;
+}
 </style>
